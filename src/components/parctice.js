@@ -12,15 +12,11 @@ function PublicComponent(){
     );
 }
 function Parctice(props) {
-    if (props.authorized) {
-        return(
-            <SecretComponent />
-        );
-    }else{
-        return(
-            <PublicComponent />
-        );
-    }
+    return(
+        <>
+        {props.authorized ? <SecretComponent /> : <PublicComponent />}
+        </>
+    );
 }
 
 export default Parctice;

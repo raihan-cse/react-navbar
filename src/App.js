@@ -9,7 +9,7 @@ function App() {
       <Navbar />
     </div>
     <div className="Parctice">
-      <Parctice authorized={false} />
+      <Parctice authorized={true} />
     </div>
     </>
   );
