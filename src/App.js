@@ -1,6 +1,7 @@
 import Navbar from './components/navbar/Navbar';
 import './App.css';
 import Parctice from './components/parctice';
+import Tick from './components/clock';
 
 function App() {
   return (
@@ -11,6 +12,10 @@ function App() {
     <div className="Parctice">
       <Parctice authorized={true} />
     </div>
+    <div>
+      <Tick />
+    </div>
+    
     </>
   );
 }
